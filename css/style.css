@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+header {
+    padding-bottom: 10%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: black;
+    position: fixed;
+  }
+  
+  nav .logo img {
+    width: 150px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+  }
+  
+  nav ul li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #FC7F09;
+    color: white;
+  }
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 18px rgba(15, 24, 42, 0.1);
+    border-radius: 1rem;
+}
+
+.input_section > h2 {
+    color: #35374B;
+    text-align: center;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #387ADF;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.input_section > form > .input > label {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #387ADF;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 0;
+    box-shadow: 0 4px 18px rgba(15, 24, 42, 0.1);
+    border-radius: 1rem;
+}
+
+.search_section > h2 {
+    color: #35374B;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: #387ADF;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 0;
+    box-shadow: 0 4px 18px rgba(15, 24, 42, 0.1);
+    border-radius: 1rem;
+    padding: 16px;
+}
+
+.book_shelf > h2 {
+    color: #35374B;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 0;
+    box-shadow: 0 4px 18px rgba(15, 24, 42, 0.1);
+    border-radius: 1rem;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+.column {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .row {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .card {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 18px rgba(15, 24, 42, 0.1);
+    border-radius: 1rem;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .year {
+    color: grey;
+  }
+
+  .btn .btn-del {
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn .btn-un {
+    background-color: #FFDF00;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .btn .btn-com {
+    background-color: #00C000;
+    border: none;
+    padding: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  footer {
+    padding: 8px;
+    text-align: center;
+    color: white;
+    background-color: #1F233F;
+  }
